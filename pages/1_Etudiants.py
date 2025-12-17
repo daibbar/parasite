@@ -8,13 +8,12 @@ st.title("🎓 Gestion des Étudiants")
 
 # --- SECTION 1 : AJOUTER UN ÉTUDIANT ---
 st.subheader("Ajouter un nouvel étudiant")
-
 with st.form("form_add_etudiant"):
     col1, col2 = st.columns(2)
     nom = col1.text_input("Nom")
     prenom = col2.text_input("Prénom")
     email = st.text_input("Email (doit être unique)")
-    filiere = st.selectbox("Filière", ["IID", "G.Info", "G.Indus", "Reseaux", "AP"])
+    filiere = st.selectbox("Filière", ["IID", "GI", "MGSI", "IRIC", "GE"])
     
     submitted = st.form_submit_button("Enregistrer")
     
