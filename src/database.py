@@ -4,7 +4,7 @@ import os
 
 # Ensure we point to the correct file paths relative to this script
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, '../data/parascolaire.db')
+DB_PATH = os.path.join(BASE_DIR, '../data/school_management.db')
 SCHEMA_PATH = os.path.join(BASE_DIR, '../data/schema.sql')
 
 def get_connection():
