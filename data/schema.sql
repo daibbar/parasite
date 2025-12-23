@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS clubs (
     nom TEXT NOT NULL UNIQUE,
     category TEXT CHECK(category IN ('entertaiment', 'sport', 'technologique', 'entrepreneuriat social')) NOT NULL,
     date_creation DATETIME NOT NULL,
-    club_description TEXT NOT NULL
+    club_description TEXT
 );
 
 CREATE TABLE IF NOT EXISTS events (
